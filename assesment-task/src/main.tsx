@@ -5,16 +5,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { IndexPage } from "./pages/IndexPage";
 import { ArtworkPage } from "./pages/ArtworkPage";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <IndexPage />,
-  },
-  {
-    path: "/:id",
-    element: <ArtworkPage />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <IndexPage />,
+    },
+    {
+      path: "/:id",
+      element: <ArtworkPage />,
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
