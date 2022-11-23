@@ -1,0 +1,27 @@
+.rating {
+}
+
+.rating-icon {
+    width: 25px;
+    height: 30px;
+    border: none;
+    overflow: hidden;
+    background: none;
+    position: relative;
+    padding: 0 0 0 10px;
+}
+.rating-icon--right {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.rating-icon--right>svg {
+    position: relative;
+    left: -15px;
+}
+
+.rating-icon--selected>svg {
+    fill: var(--icon_fill);
+}
+.rating-icon--potentially-selected>svg {
+    fill: var(--link_underline_focused);
+}

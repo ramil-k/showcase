@@ -1,0 +1,45 @@
+.artwork-page {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 50px;
+    gap: 25px;
+
+    background: var(--card_background);
+    border: solid 0 black;
+    border-radius: 25px;
+
+    box-shadow:
+            var(--opague_grey_shadow) 0 7px 15px -3px,
+            var(--yellow_shadow) 0px 5px 9px -5px,
+            var(--opague_grey_shadow) 0px 0px 0px -0px inset,
+            var(--blue_shadow) 0px 0px 0px -0px inset;
+}
+
+.artwork-page__backlink {
+    width: max-content;
+}
+
+.artwork-page__card {
+    display: grid;
+    grid-template-columns: minmax(max-content, 1fr) minmax(min-content, max-content);
+    grid-auto-rows: min-content;
+    gap: 25px;
+}
+.artwork-page__card__image {
+    grid-column: 1;
+    grid-row: 1 / span 5;
+    max-width: 400px;
+}
+.artwork-page__card h1 {
+    max-width: 400px;
+}
+@media screen and (max-width: 850px) {
+    .artwork-page__card {
+        grid-template-columns: 1fr;
+    }
+    .artwork-page__card__image {
+        grid-column: auto;
+        max-width: 500px;
+    }
+}

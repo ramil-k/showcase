@@ -1,0 +1,8 @@
+@import "./variables.css";
+@import "./typography.css";
+@import "./globals.css";
+@import "./index-page.css";
+@import "./artwork-page.css";
+@import "./rating.css";
+@import "./loading.css";
+@import "./cards.css";

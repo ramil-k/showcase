@@ -1,0 +1,28 @@
+:root {
+    /* PALETTE */
+    --blue: 112, 171, 215;
+    --blue_deep: 23, 140, 206;
+    --red: 214, 118, 80;
+    --yellow: 242, 216, 123;
+    --black: 0, 0, 0;
+    --dark_grey: 37, 37, 37;
+
+    /* COLORS */
+    --body_background:          rgb(var(--blue));
+
+    --card_background:          rgb(var(--yellow));
+
+    --link_underline:           rgba(var(--blue), 0.5);
+    --link_text:                rgb(var(--blue_deep));
+    --link_underline_focused:   rgb(var(--red));
+    --link_text_focused:        rgb(var(--red));
+
+    --opague_grey_shadow:       rgba(var(--black), 0.25);
+    --red_shadow:               rgb(var(--red));
+    --yellow_shadow:            rgba(var(--yellow), 0.3);
+    --blue_shadow:              rgba(var(--blue), 0.3);
+    --blackish_shadow:          rgba(var(--dark_grey), 0.8);
+
+    --icon_fill:          rgb(var(--blue));
+
+}

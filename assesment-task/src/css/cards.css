@@ -1,0 +1,25 @@
+.yellow-card {
+    background: var(--card_background);
+    border: solid 0;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+.yellow-card.yellow-card--focusable {
+    box-shadow:
+            var(--opague_grey_shadow) 0 0 0 0,
+            var(--yellow_shadow) 0 0 0 0,
+            var(--opague_grey_shadow) 0 7px 7px -3px inset,
+            var(--blue_shadow) 0px 5px 9px -5px inset;
+
+}
+.yellow-card,
+.yellow-card--focusable:hover,
+.yellow-card--focusable:focus-visible {
+    box-shadow:
+            var(--opague_grey_shadow) 0 7px 15px -3px,
+            var(--yellow_shadow) 0 5px 9px -5px,
+            var(--opague_grey_shadow) 0 0 0 0 inset,
+            var(--red_shadow) 0 0 0 0 inset;
+}
+

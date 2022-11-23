@@ -1,0 +1,22 @@
+.loading {
+    padding: 30px 100px 50px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    height: min-content;
+}
+
+.loading-error.yellow-card {
+    background: var(--link_text_focused);
+}
+
+.loading-error__button {
+    appearance: auto;
+    border: solid 0;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px;
+}
