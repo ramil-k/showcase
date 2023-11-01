@@ -6,6 +6,7 @@
     align-items: stretch;
     flex-direction: column;
     height: min-content;
+    border-radius: 25px;
 }
 
 .loading-error.yellow-card {

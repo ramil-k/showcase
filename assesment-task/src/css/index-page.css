@@ -16,6 +16,7 @@
     gap: 15px;
     height: max-content;
     transition: box-shadow 0.1s ease-in;
+    border-radius: 25px;
 }
 
 .card__image {
@@ -32,3 +33,14 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 600px) {
+    .card-list {
+        padding: 0;
+        gap: 1px;
+    }
+    .card {
+        border-radius: 0;
+    }
+}
+

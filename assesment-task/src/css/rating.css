@@ -1,4 +1,6 @@
 .rating {
+    display: grid;
+    grid-template-columns: repeat(10, min-content);
 }
 
 .rating-icon {
